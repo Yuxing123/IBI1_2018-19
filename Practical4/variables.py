@@ -10,3 +10,11 @@ c=b/7
 d=c/11
 e=d/13
 print(a==e)
+
+#Booleans
+X=True
+Y=True
+Z=(X and not Y) or (Y and not X)
+print(Z)
+W=X!=Y
+print(Z==W)
