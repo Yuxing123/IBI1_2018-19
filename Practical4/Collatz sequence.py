@@ -5,7 +5,11 @@ Created on Wed Mar 13 09:09:49 2019
 @author: 52935
 """
 
-# if and for sentence
+# If and while sentence
+# Use "while" to stat a circle
+# Use "if" to judge wether n is even or not
+# when n==1 then break
+
 n=45121513
 while 1==1:
     if n%2 == 0:
