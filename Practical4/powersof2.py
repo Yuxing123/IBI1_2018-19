@@ -9,7 +9,7 @@ Created on Wed Mar 13 09:41:42 2019
 # use x-2**n judge the answer wether >= 0
 # if >=0 record n
 
-x=1595
+x=4562
 y=str(x)+" is "
 n=13
 for i in range (0,14):
