@@ -1,4 +1,4 @@
-DNA = "ATGCTTCAGAAAGGTCTTACG"
+DNA = input("give me a sequence of DNA : ")
 DNA = list(DNA)
 myDict = {}
 for i in DNA:
