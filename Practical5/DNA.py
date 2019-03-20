@@ -12,7 +12,7 @@ import matplotlib.pyplot as plt
 labels='A','T','G','C'
 sizes=myDict['A'],myDict['T'],myDict['C'],myDict['G']
 colors='lightgreen','gold','lightskyblue','lightcoral'
-explode=0,0,0,0
+explode=0.1,0.1,0.1,0.1
 plt.pie(sizes,explode=explode,labels=labels,
         colors=colors,autopct='%1.1f%%',shadow=True,startangle=50)
 plt.axis('equal')
