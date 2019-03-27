@@ -8,5 +8,5 @@ Created on Wed Mar 20 09:00:59 2019
 L = input("give me a string of words :")
 L = L[::-1]
 L = L.split(" ")
-L.sort(reverse=True)
+L.sort(reverse=True,key=str.lower)
 print(L)

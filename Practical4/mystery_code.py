@@ -14,7 +14,7 @@ from math import ceil
 p=False
 while p==False:
     p=True
-    n = randint(1000000000000,100000000000000)
+    n = randint(1,100)
     u = ceil(n**(0.5))
     for i in range(2,u+1):
         if n%i == 0:
