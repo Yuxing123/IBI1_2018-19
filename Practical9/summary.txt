@@ -1,0 +1,6 @@
+BLOSUM score for mouse human comparison:1091
+identity  for mouse human comparison is 88.4%
+BLOSUM score for human random seq comparison-250
+identity  for human random seq comparison is 5.3%
+BLOSUM score for mouse random seq comparison:-250
+identity  for mouse random seq comparison is 5.9%
