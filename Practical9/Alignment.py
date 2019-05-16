@@ -24,14 +24,22 @@ count3 = 0
 i = 0
 p = 0
 q = 0
+finalseq1=''
+finalseq2=''
 
 for a in seq1:
     try:
         count1 = count1 + blosum[a][seq2[i]]
+        finalseq1 = finalseq1 + a
+        finalseq2 = finalseq2 + seq2[i]
         if a==seq2[i]:
             identical1+=1
+            finalseq1 += '+'
+            finalseq2 += '+'
         else:
             identical1=identical1
+            finalseq1=finalseq1
+            finalseq2=finalseq2#make graph
         i=i+1
     except:
         count1=count1
@@ -70,13 +78,15 @@ for c in seq2:
 percentage3=identical3/len(seq2)
 print('BLOSUM score for mouse random seq comparison:',count3)
 print('identity  for mouse random seq comparison is %.1f%%'%(percentage3*100))
+
+print('visual Aliment is:','\n',finalseq1,'\n',finalseq2)
 #mouse random seq comparison
 
-f=open(r'C:\Users\52935\Desktop\ibi\IBI1_2018-19\Practical9/summary.txt','w')
-f.write('BLOSUM score for mouse human comparison:'+str(count1)+'\n')
-f.write('identity  for mouse human comparison is %.1f%%'%(percentage1*100)+'\n')
-f.write('BLOSUM score for human random seq comparison'+str(count2)+'\n')
-f.write('identity  for human random seq comparison is %.1f%%'%(percentage2*100)+'\n')
-f.write('BLOSUM score for mouse random seq comparison:'+str(count3)+'\n')
-f.write('identity  for mouse random seq comparison is %.1f%%'%(percentage3*100)+'\n')
-f.close()
+#f=open(r'C:\Users\52935\Desktop\ibi\IBI1_2018-19\Practical9/summary.txt','w')
+#f.write('BLOSUM score for mouse human comparison:'+str(count1)+'\n')
+#f.write('identity  for mouse human comparison is %.1f%%'%(percentage1*100)+'\n')
+#f.write('BLOSUM score for human random seq comparison'+str(count2)+'\n')
+#f.write('identity  for human random seq comparison is %.1f%%'%(percentage2*100)+'\n')
+#f.write('BLOSUM score for mouse random seq comparison:'+str(count3)+'\n')
+#f.write('identity  for mouse random seq comparison is %.1f%%'%(percentage3*100)+'\n')
+#f.close()
