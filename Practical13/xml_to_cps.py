@@ -50,7 +50,11 @@ def xml_to_cps():
     listOfReports  =  cpsCollection.getElementsByTagName("ListOfReports")[0]
     listOfReports.appendChild(report)
     
+<<<<<<< HEAD
     cpsFile = open("predator-prey.cps","w")
+=======
+    cpsFile = open("predator-prey.cps","w",encoding='utf-8')
+>>>>>>> master
     cpsTree.writexml(cpsFile)
     cpsFile.close()
     
