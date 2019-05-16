@@ -85,7 +85,4 @@ plt.ylabel('prey population')
 plt.title('limit cycle')
 
 # not complete code
-"""
-DOMTree = xml.dom.minidom.parse(r'C:\Users\52935\Desktop\ibi\IBI1_2018-19\Practical13/predator-prey.xml')
-
-    
+#DOMTree = xml.dom.minidom.parse(r'C:\Users\52935\Desktop\ibi\IBI1_2018-19\Practical13/predator-prey.xml')

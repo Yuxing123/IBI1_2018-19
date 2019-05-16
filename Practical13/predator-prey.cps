@@ -1,4 +1,4 @@
-<?xml version="1.0" ?><!-- generated with COPASI 4.24 (Build 197) (http://www.copasi.org) at 2019-05-15 03:39:05 UTC --><?oxygen RNGSchema="http://www.copasi.org/static/schema/CopasiML.rng" type="xml"?><COPASI copasiSourcesModified="0" versionDevel="197" versionMajor="4" versionMinor="24" xmlns="http://www.copasi.org/static/schema">
+<?xml version="1.0" ?><!-- generated with COPASI 4.24 (Build 197) (http://www.copasi.org) at 2019-05-16 04:35:44 UTC --><?oxygen RNGSchema="http://www.copasi.org/static/schema/CopasiML.rng" type="xml"?><COPASI copasiSourcesModified="0" versionDevel="197" versionMajor="4" versionMinor="24" xmlns="http://www.copasi.org/static/schema">
   <ListOfFunctions>
     <Function key="Function_13" name="Mass action (irreversible)" reversible="false" type="MassAction">
       <MiriamAnnotation>
