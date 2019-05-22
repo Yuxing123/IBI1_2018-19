@@ -61,19 +61,19 @@ def xml_to_cps():
     cpsFile.close()
 # change 
 for i in range(0,5): # Run simulation for 5 times
-    pm = {}
-    DOMTree = xml.dom.minidom.parse('predator-prey.xml')
-    collection = DOMTree.documentElement
-    model_it = collection.getElementsByTagName('parameter')
-    for i in range(0,4):
-        temp = np.random.sample()
-        pm_name = model_it[i].getAttribute('id')
-        print(pm_name,':',temp)
-        pm[pm_name]=temp
-        model_it[i].setAttribute('value',str(temp))
-    filexml = open('predator-prey.xml','w')
-    DOMTree.writexml(filexml)
-    filexml.close()   
+    #pm = {}
+    #DOMTree = xml.dom.minidom.parse('predator-prey.xml')
+    #collection = DOMTree.documentElement
+    #model_it = collection.getElementsByTagName('parameter')
+    #for i in range(0,4):
+        #temp = np.random.sample()
+        #pm_name = model_it[i].getAttribute('id')
+        #print(pm_name,':',temp)
+        #pm[pm_name]=temp
+        #model_it[i].setAttribute('value',str(temp))
+    #filexml = open('predator-prey.xml','w')
+    #DOMTree.writexml(filexml)
+    #filexml.close()   
     xml_to_cps()
     os.system('CopasiSE.exe predator-prey.cps')
     data=[]
